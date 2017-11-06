@@ -69,7 +69,7 @@ As more toolsets are identified, source-build can and will make more toolsets av
 Here is an example of a call source-build will make on the `dotnet/corefx` repo:
 
 ```
-/path/to/corefx/build.sh Build -DotNetBuildFromSource true -DotNetCoreSdkDir "/path/to/dotnet" -DotNetBuildToolsDir "/path/to/buildtools"
+/path/to/corefx/build.sh -DotNetSourceBuildAction Build -DotNetCoreSdkDir "/path/to/dotnet" -DotNetBuildToolsDir "/path/to/buildtools"
 ```
 
 > **Note:** Not all properties have been specified above. As each action gets designed in detail, more `DotNet` properties will be specified. For example, the `Build` action above isn't getting told which dependency versions to use.
